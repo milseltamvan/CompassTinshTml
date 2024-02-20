@@ -1,0 +1,1 @@
+INSERT INTO login values(1,'Winter2016','T_zz3601');
