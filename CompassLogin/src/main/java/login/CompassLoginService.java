@@ -17,4 +17,9 @@ public class CompassLoginService {
 
         return login.findByUsernameAndPassword(username, password);
     }
+
+	public String findByUsername(String username) {
+		// TODO Auto-generated method stub
+		return login.findByUsername(username);
+	}
 }

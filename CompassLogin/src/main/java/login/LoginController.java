@@ -32,8 +32,10 @@ public class LoginController {
 	@CrossOrigin(origins = "http://localhost:3000")
 	@PostMapping("/login")
     public Login getUserById(@RequestParam("username") String username, @RequestParam("password") String password) {
+		System.out.println(username+" = "+password);
 
 	    Login log = LoginService.findByUsernameAndPassword(username,password);
+//	    String byUsername = LoginService.findByUsername(username);
 	    if(log==null) {
 	    	return null; 
 	    }
